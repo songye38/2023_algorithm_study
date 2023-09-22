@@ -39,6 +39,8 @@ while q.qsize()>0:
             
 
 for _ in range(len(N)):
+    pass
+
 
 
 
