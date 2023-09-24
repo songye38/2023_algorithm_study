@@ -4,7 +4,9 @@
 - season2 : 취업과 이직을 위한 프로그래머스 코딩 테스트 문제 풀이 전략 : 파이썬 편
 - 각 3개월씩 두권의 책으로 학습 진행
 
-TODO #8 @songye38 `consider refactoring`
+TODO #10 : @songye38 `내용 추가하기`
+
+하하하하 새롭게 내용을 추가해보자!!
 
 ### season2
 ## Season1 
