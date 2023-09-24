@@ -5,6 +5,7 @@
 - 각 3개월씩 두권의 책으로 학습 진행
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 TODO #2 : 이렇게 하면 issue가 생길까? 
 
 
@@ -13,6 +14,8 @@ TODO #2 : 이렇게 하면 issue가 생길까?
 
 vvbvbvbvbvbvbvbvbvbvbvbvbvbv
 >>>>>>> songye38/issue1
+=======
+>>>>>>> songye38/issue2
 ## Season1 
 ### 🍀 개요
 - **교재** : Do it! 알고리즘 코딩 테스트 : 파이썬 편
@@ -20,6 +23,7 @@ vvbvbvbvbvbvbvbvbvbvbvbvbvbv
 - **방식** : 사전학습 방식
 
 
+testgggg
 ### 🎯 개인 학습 history
 #### 23.7.19 
 - 4번 문제
