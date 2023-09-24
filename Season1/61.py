@@ -7,7 +7,7 @@ distance = [[sys.maxsize for j in range(N+1)] for i in range(N+1)]
 
 
 for i in range(1,N+1):
-    distance[i][i] = 0
+    if distance[i][i] = 0
 
 
 for _ in range(M):
