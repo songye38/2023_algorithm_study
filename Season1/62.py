@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 N = int(input())
 
-distance = [[[0] * N] for _ in range(N)]
+distance = [[0 for j in range(N)] for i in range(N)]
 
 for i in range(N):
     distance[i] = list(map(int,input().split()))
