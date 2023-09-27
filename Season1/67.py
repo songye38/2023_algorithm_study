@@ -13,7 +13,7 @@ N = int(input())
 
 
 visited = [False] * (N+1)
-tree = [0 for _ in range(N+1)]
+tree = [[] for _ in range(N+1)]
 answer = [0] * (N+1)
 
 
@@ -27,9 +27,10 @@ for i in range(N-1):
 def DFS(now):
     visited[now] = True
     for next in tree[now]:
-        answer[next] = now
-        DFS(next)
+        if not visited[next]:
+            answer[next] = now
+            DFS(next)
 
 DFS(1)
-for i in range(2,N):
+for i in range(2,N+1):
     print(answer[i])
