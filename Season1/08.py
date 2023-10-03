@@ -10,7 +10,7 @@ for k in range(len(n)):
 
     while i < j:
         if A[i] + A[j] ==find:
-            p
+            pass
         elif A[i]+A[j] < find:
             i+=1
         else:
