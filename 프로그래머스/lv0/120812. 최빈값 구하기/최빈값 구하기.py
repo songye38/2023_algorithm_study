@@ -4,8 +4,6 @@ def solution(array):
     for i in array:
         answer_array[i] = array.count(i)
         
-    print(answer_array)
-        
     max_value = max(answer_array) #최빈값 수 자체를 구하기 
     answer = answer_array.count(max_value) #최빈값이 겹치는지 확인하기 
     
