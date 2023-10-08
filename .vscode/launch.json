@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["<", "Season1/input.txt"]
+            "args": ["<", "백준/input.txt"]
         }
     ]
 }
