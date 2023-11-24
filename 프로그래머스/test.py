@@ -1,31 +1,22 @@
-import itertools
-import re
-import copy
+def getShortCount(m,n,map,answer): #m,n에서 시작
+    if m==0 and n==0:
+        return True
+    
+    if map[n][m-1]==0 and n>=0 and m-1 >=0:
+        if getShortCount(m-1,n,map,answer): #왼쪽
+            answer.append(1)
+    if map[n-1][m] ==0 and n-1>=0 and m >=0:
+        if getShortCount(m,n-1,map,answer): #윗쪽
+            answer.append(1)
 
-def solution(expression):
+
+def solution(m, n, puddles):
     answer = []
-    operator = [i for i in ['*','+','-'] if i in list(expression)]
-    
-    combi = list(itertools.permutations(operator, len(operator)))
-    expression = re.findall(r'(\d+|\D)', expression)
+    map = [[0 for j in range(m)] for i in range(n)] #전체 지도 생성
+    for paddle in puddles:
+        map[paddle[1]-1][paddle[0]-1] = 1 #물에 잠긴 지역은 1로 표시      
+    getShortCount(m-1,n-1,map,answer)
+    return len(answer)
 
-    #원본
-    expression = [expression.strip() for expression in expression if expression.strip()]
-    
-    for i in combi:
-        ex_copy = copy.deepcopy(expression)
-        for j in range(len(i)-1):
-            index = ex_copy.index(i[j])
-            ex_copy.insert(index-1,'(')
-            ex_copy.insert(index+3,')')
-            result_str = "".join(ex_copy)
-            try:
-                temp_sum = eval(result_str)
-                answer.append(abs(temp_sum))
-                print(temp_sum)
-            except (RuntimeError,SyntaxError,SyntaxWarning,TypeError):
-                pass
-    print(answer)
-    return max(answer)
 
-solution("100-200*300-500+20")
+print(solution(4,3,[[2, 2]]))
