@@ -10,9 +10,5 @@
 - [취업과 이직을 위한 프로그래머스 코딩 테스트 문제 풀이 전략 : 파이썬 편 REPO](https://github.com/songye38/2023_algorithm_study/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4)
 - [모두의 연구소 : 프로그래머스 코딩 테스트 공부](https://modulabs.co.kr/product/flip2208-13590-2023-09-20-133700/)
 
-### season3 :
-- 24.1.18 ~
-- leetcode top100 문제 풀이
-- 11주 과정
 
 
